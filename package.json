@@ -1,0 +1,31 @@
+{
+  "name": "recom",
+  "version": "1.0.1",
+  "description": "a simple complete c-commerce website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/REJAOL/recom_ecommerce.git"
+  },
+  "keywords": [
+    "recom",
+    "ecommerce",
+    "node.js",
+    "ejs",
+    "mongodb",
+    "cloudinary"
+  ],
+  "author": "Md. Salah Uddin",
+  "license": "https://github.com/REJAOL",
+  "bugs": {
+    "url": "https://github.com/REJAOL/recom_ecommerce/issues"
+  },
+  "homepage": "https://github.com/REJAOL/recom_ecommerce#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
