@@ -2,8 +2,27 @@ const express = require("express")
 
 const router = express.Router()
 
-router.get("/", function(req,res){
+const userModel = require("../models/user-model.js")
+
+router.get("/", function (req, res) {
     res.send("hello from user page")
 })
+
+router.post("/register", async function (req, res) {
+    try {
+        let { email, password, fullname } = req.body
+        let user = await userModel.create({
+            email,
+            password,
+            fullname
+        })
+
+        res.send(user)
+    } catch (err) {
+        console.log(err.message);
+    }
+})
+
+
 
 module.exports = router
