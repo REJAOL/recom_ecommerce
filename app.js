@@ -7,6 +7,8 @@ const userRouter = require('./routes/userRoute.js')
 const ownerRouter = require('./routes/ownerRoute.js')
 const productRouter = require('./routes/productRoute.js')
 
+require("dotenv").config()
+
 const db = require('./config/mongoose-connection')
 
 app.use(express.json())
